@@ -1,3 +1,5 @@
+/*This is A GPA calculator*/
+
 #include <iostream>
 
 using namespace std;
@@ -7,8 +9,9 @@ int main()
 	cout << "*** WELCOME TO THE SIMPLE GPA CALCULATOR ***" << "\n";
 	int semesters; 
 	
-	cout << "Please input the number of semesters: "; cin >> semesters;
-	cout << "\n";
+	cout << "Please input the number of semesters: ";
+	cin >> semesters; //Inputs
+	cout << "\n"; 
 
 	double arrayOfGPA[semesters];
 	int courses; 
@@ -19,11 +22,14 @@ int main()
 	{
 		double result = 0;
 		totalCourseCredits = 0;
-		cout << "Semester " << i << " courses: "; cin >> courses;
+		cout << "Semester " << i << " courses: ";
+		cin >> courses;
 		for (int j = 0; j < courses; j++)
 		{
 			int grade;
-			cout << "Enter your grade: "; cin >> grade;
+			cout << "Enter your grade: ";
+			cin >> grade;    
+			/* Grade Classification*/
 			while (grade > 4 || grade < 0)
 			{
 				cout << "Please re-enter: ";
